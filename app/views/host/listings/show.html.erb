@@ -1,0 +1,5 @@
+<h1><%= @listing.title %></h1>
+
+<pre><%= JSON.pretty_generate(@listing.as_json) %><pre>
+
+<%= button_to "Edit listing", edit_host_listing_path(@listing), method: :get%>
