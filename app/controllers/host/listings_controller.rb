@@ -16,7 +16,7 @@ class Host::ListingsController < ApplicationController
   end
 
   def edit
-    @listing = current_user.listings.find(params[:id]) # association on User model
+    @listing = current_user.listings.find(params[:id])
   end
 
   def update
@@ -44,6 +44,7 @@ class Host::ListingsController < ApplicationController
   end
 
   private
+
   def listing_create_params
     params.require(:listing).permit(
       :title,
@@ -58,7 +59,7 @@ class Host::ListingsController < ApplicationController
     )
   end
 
-  def listing_update_params # dont let the host update the address !
+  def listing_update_params
     params.require(:listing).permit(
       :title,
       :about,
