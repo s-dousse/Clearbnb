@@ -31,6 +31,8 @@ gem 'bootsnap', '>= 1.4.4', require: false
 # Authentication
 gem 'annotate'
 gem 'devise'
+
+gem 'omniauth-google-oauth2'
 gem 'letter_opener'
 
 group :development, :test do

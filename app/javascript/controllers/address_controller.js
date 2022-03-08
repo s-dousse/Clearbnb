@@ -5,4 +5,12 @@ export default class extends Controller {
   connect() {
     console.log('Address controller is connected');
   }
+
+  initGoogle() {
+    // set up autocomplete
+  }
+
+  placeSelected() {
+    // user the values from autocomplete
+  }
 }
