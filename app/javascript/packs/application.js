@@ -12,3 +12,7 @@ import "controllers"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+window.initMap = () => {
+  console.log("map initialized");
+}
